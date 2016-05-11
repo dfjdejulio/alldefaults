@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		47F264791CE3A75900D88B72 /* alldefaults */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = alldefaults; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F2647C1CE3A75900D88B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47F264831CE3AEEB00D88B72 /* InstallSettings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = InstallSettings.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		47F264701CE3A75900D88B72 = {
 			isa = PBXGroup;
 			children = (
+				47F264831CE3AEEB00D88B72 /* InstallSettings.xcconfig */,
 				47F2647B1CE3A75900D88B72 /* alldefaults */,
 				47F2647A1CE3A75900D88B72 /* Products */,
 			);
@@ -127,6 +129,7 @@
 /* Begin XCBuildConfiguration section */
 		47F2647E1CE3A75900D88B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F264831CE3AEEB00D88B72 /* InstallSettings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -162,6 +165,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(BIN)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -171,6 +175,7 @@
 		};
 		47F2647F1CE3A75900D88B72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F264831CE3AEEB00D88B72 /* InstallSettings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -200,6 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(BIN)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -209,6 +215,7 @@
 		47F264811CE3A75900D88B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INSTALL_PATH = "$(BIN)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +223,7 @@
 		47F264821CE3A75900D88B72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INSTALL_PATH = "$(BIN)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
