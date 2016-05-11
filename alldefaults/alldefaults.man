@@ -1,0 +1,14 @@
+.TH ALLDEFAULTS 1
+.SH NAME
+alldefaults - display all defaults merged from all domains
+.SH SYNOPSIS
+.B alldefaults
+[domain]
+.SH DESCRIPTION
+The
+.B alldefaults
+command does....
+.PP
+No, it really does...
+.SH "SEE ALSO"
+.BR defaults (1)
